@@ -22,6 +22,7 @@ A production-style full-stack personal finance application with REST API + analy
 | **Analytics** | Summary, category breakdown, monthly trends |
 | **Dashboard** | Streamlit frontend for visual demo |
 | **Dockerized** | One-command setup with PostgreSQL |
+| **CI** | GitHub Actions for syntax/import checks |
 
 ---
 
@@ -31,7 +32,19 @@ A production-style full-stack personal finance application with REST API + analy
 - **Database**: PostgreSQL 16
 - **Frontend / Demo**: Streamlit
 - **Data**: Pandas
-- **DevOps**: Docker, docker-compose
+- **DevOps**: Docker, docker-compose, Github Actions, Render
+
+---
+
+## Live Demo
+
+| Service | URL |
+|---------|-----|
+| **API** | https://spendwise-api-umej.onrender.com |
+| **Swagger Docs** | https://spendwise-api-umej.onrender.com/docs |
+| **Health Check** | https://spendwise-api-umej.onrender.com/health |
+
+> Note: Free-tier Render services may take 30–50 seconds to wake up on the first request.
 
 ---
 
@@ -43,7 +56,7 @@ A production-style full-stack personal finance application with REST API + analy
 ### Run the full stack
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Satyam-2004/spendwise.git
 cd spendwise
 docker-compose up --build
 ```
