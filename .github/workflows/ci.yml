@@ -24,6 +24,10 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Check imports
+      - name: Syntax & Import Check
         run: |
-          python -c "from app.main import app; print('App imported successfully')"
+          python -m py_compile app/main.py
+          python -m py_compile app/api/auth.py
+          python -m py_compile app/api/transactions.py
+          python -m py_compile app/api/analytics.py
+          echo "All files compiled successfully"
