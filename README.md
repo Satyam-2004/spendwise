@@ -8,6 +8,7 @@ A production-style full-stack personal finance application with REST API + analy
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue)
 ![Docker](https://img.shields.io/badge/Docker-ready-blue)
+![CI](https://github.com/Satyam-2004/spendwise/actions/workflows/ci.yml/badge.svg)
 
 ---
 
